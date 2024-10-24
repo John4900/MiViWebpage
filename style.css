@@ -115,14 +115,25 @@ portrait{
     margin-top: 20px;
     
 }
-
+.info {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    
+    
+    color: #B8A9CF;
+}
+    .info h1 {
+        text-align: center;
+        font-size: 80px;
+        padding-bottom: 80px;
+    }
 
 .container {
     display: flex;
     align-items: center;
-    
-    column-gap: 15px;
-    justify-content: center
+    column-gap: 10px;
+    justify-content:space-evenly;
 }
      
     .text {
