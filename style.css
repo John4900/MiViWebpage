@@ -5,10 +5,12 @@
 }
 .banner{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/Possible_background.jpeg);
     background-size: cover;
     background-position: center;
+    
 }
 .navbar{
     width: 95%;
@@ -108,37 +110,77 @@ button:hover span{
 button:hover{
     border: none;
 }
-portrait{
-    width: 15%;
-    height: 10%;
+.portrait {
+    width: 20%;
+    height: 20%;
     position: relative;
-    margin-top: 20px;
+    margin-right: 50px;
     
 }
 .info {
     width: 100%;
-    position: absolute;
+    height: auto;
+    position: center;
     top: 30%;
-    
-    
     color: #B8A9CF;
+    text-align: center;
 }
     .info h1 {
-        text-align: center;
+        position: center;
         font-size: 80px;
-        padding-bottom: 80px;
+        margin-bottom: 80px;
+        
+    }
+    .info h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+       
+    }
+    .info h3{
+        font-size: 35px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    .info p{
+        font-size: 25px;
     }
 
 .container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     column-gap: 10px;
-    justify-content:space-evenly;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-     
-    .text {
-        font-size: 40px;
-        color: #B8A9CF;
+
+table {
+    width: 40%;
+    font-size: larger;
+    text-align: start;
+
+}
+
+th{
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: start;
+}
+
+
+
+.cont:hover{
+    background: linear-gradient(to bottom right, #B8A9CF,#F5E0FD);
+    cursor: pointer;
+}
+
+
+.hidden_row {
+    display: none;
+    
+}
+    .hidden_row td {
+        border: dashed;
+        border-color: black;
     }
 
 .footer {
@@ -146,6 +188,7 @@ portrait{
     position: absolute;
     width: 100%;
     text-align: center;
+    
 }
     .footer h1 {
         font-size: 40px;

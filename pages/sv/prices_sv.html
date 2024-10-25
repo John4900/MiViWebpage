@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tjänster och priser - MiVi Beauty</title>
+    <link rel=" stylesheet" href="../../style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
+    </script>
+
+    <script type="text/javascript">
+        function showHideRow(row) {
+            $('#' + row).toggle();
+        }
+    </script>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../../images/MiViBeauty_logo_transp_white.png" class=" logo" />
+            <ul>
+                <li><a href="../../index.html">Hem</a></li>
+                <li><a href="https://phorest.com/salon/mivibeauty">Boka tid</a></li>
+                <li><a href="#">Tjänster och priser</a></li>
+                <li><a href="about_sv.html">Om oss</a></li>
+                <li><a href="#">Kontaktuppgifter</a></li>
+                <li><a href="https://gift-cards.phorest.com/salons/mivibeauty"><img src="../../images/giftcard.svg" style="width:50px;height:50px;margin:-10px;"></a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h1>Våra tjänster</h1>
+            <h2>Fransar och bryn</h2>
+            <div class="container">
+
+                <img src="../../images/eye.jpg" class="portrait">
+
+                
+                
+                <table align="left" cellpadding="10">
+                    <tr>
+                        <th>Behandling</th>
+                        <th>Pris</th>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row1');" class="cont">Formning av bryn</td>
+                        <td>Från 14 €</td>
+                    </tr>
+                    <tr id="hidden_row1" class="hidden_row">
+                        <td colspan="4">
+                            Formning av bryn med hjälp av vax och pincett.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row2');" class="cont">Färgning och formning av bryn</td>
+                        <td>23 €</td>
+                    </tr>
+                    <tr id="hidden_row2" class="hidden_row">
+                        <td colspan="4">
+                            Permanent färgning av ögonbryn samt formning. Formning görs med vax och pincett, färgen håller ca. 4-6v.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row3');" class="cont">Färgning av fransar</td>
+                        <td>23 €</td>
+                    </tr>
+                    <tr id="hidden_row3" class="hidden_row">
+                        <td colspan="4">
+                            Permanent färgning av fransar. Håller ca. 4-6v.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row4');" class="cont">Färgning av fransar och bryn</td>
+                        <td>35 €</td>
+                    </tr>
+                    <tr id="hidden_row4" class="hidden_row">
+                        <td colspan="4">
+                            Permanent färgning av fransar och bryn samt formning av bryn. Formning görs med vax och pincett, färgen håller ca. 4-6v.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row5');" class="cont">Lash lift</td>
+                        <td>70 €</td>
+                    </tr>
+                    <tr id="hidden_row5" class="hidden_row">
+                        <td colspan="4">
+                            Permanent böjning av egna fransar. Färgning av fransar ingår. Håller ca 6-8v.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td onclick="showHideRow('hidden_row6');" class="cont">Lash lift + brynfärg</td>
+                        <td>85 €</td>
+                    </tr>
+                    <tr id="hidden_row6" class="hidden_row">
+                        <td colspan="4">
+                            Permanent böjning av egna fransar. Färgning av fransar och bryn ingår. Håller ca 6-8v.
+                        </td>
+                    </tr>
+
+                </table>
+
+               
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h1>Kontaktuppgifter</h1>
+            <p>
+                Kyrkoesplanaden 13, Parainen, 21600, Finland<br><br>044 9778642
+            </p>
+            <p><a href="mailto:info@mivibeauty.fi">info@mivibeauty.fi</a></p>
+            <p><a href="https://www.instagram.com/_mivibeauty_/"><img src="../../images/instagram-logo.svg" class="icon" style="margin-right:10px;" /></a><a href="https://www.facebook.com/people/MiVi-Beauty/61554567400659/"><img src="../../images/facebook-logo.svg" class="icon" style="margin-left:10px;" /></a></p>
+        </div>
+    </footer>
+</body>
+</html>
