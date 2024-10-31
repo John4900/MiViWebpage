@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kontaktuppgifter - MiVi Beauty</title>
     <link rel=" stylesheet" href="../../style.css" />
-    <script src="../../script.js" defer></script>
+    <script src="../../navbar.js" defer></script>
+    <script src="../../contact.js" defer></script>
+    
 </head>
 <body>
     <div class="altbanner">
@@ -51,7 +53,7 @@
                     <a href="about_sv.html">Om oss</a>
                     <a href="#">Kontaktuppgifter</a>
                     <a href="https://gift-cards.phorest.com/salons/mivibeauty"><img src="../../images/giftcard-black.svg" class="icon"></a>
-                    <a href="https://gift-cards.phorest.com/salons/mivibeauty"><img src="../../images/giftcard-black.svg" class="icon"></a>
+                    <a href="https://gift-cards.phorest.com/salons/mivibeauty"><img src="../../images/shopping_icon-black.svg" class="icon"></a>
                 </div>
             </div>
             <div class="dropdown">
@@ -73,7 +75,7 @@
             <h1 style="margin-bottom:70px;">Kontaktuppgifter</h1>
             <div class="infocontainer">
 
-                
+
                 <div class="contact">
 
                     <h2>Telefon:</h2>
@@ -94,136 +96,258 @@
 
         </div>
 
-        <div class="info">
-            <h2 style="text-align:center; color:#B8A9CF; padding-bottom:2%; padding-top:2%;">Policy:</h2>
-            <h3 style="padding-left:1%;">Avbokningspolicy:</h3>
-            <p style="padding-left: 2%; padding-bottom: 2%; font-size: 100%; ">
-                Vi förstår att saker kan dyka upp. Vi värdesätter din tid, och vi hoppas att du också
-                värdesätter vår. I händelse av att du behöver avboka din tid, vänligen meddela oss senast 24 timmar
-                innan din planerade tid. Försenad avbokning ger oss rätt att debitera en förseningsavgift på 60 % av
-                behandlingspriset.
-            </p>
-            <h3 style="padding-left: 1%;">Förseningspolicy:</h3>
-            <p style="padding-left: 2%; padding-bottom: 2%; font-size: 100%; ">
-                Om du blir försenad med din ankomst, kom ihåg att din tjänst kommer att avslutas
-                vid den ursprungliga tidpunkten. Alla sena ankomster, mer än 10 minuter, kommer att behöva ombokas
-                och kommer att medföra en sen avbokningsavgift på 60% av behandlingens ursprungliga pris.
 
-            </p>
+        <h2 style="text-align:center; color:#B8A9CF; padding-bottom:2%; padding-top:2%; font-size: 200%;">Policy:</h2>
 
-
-            <div class="dropdown-new" data-dropdown>
-                <button class=" link" data-dropdown-button>Presentkort</button>
-                <div class="dropdown-menu">
-                    Presentkort som köpts från vårt företag kan användas som betalmetod för både tjänster
-                    och produkter inom 9 månader från köp-datum. Ett föråldrat presentkort räknas som ogiltigt och kan
-                    därmed inte längre användas som betalmetod.
+        <div class="contact_container">
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Avbokningspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
                 </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Vi förstår att saker kan dyka upp. Vi värdesätter din tid, och vi hoppas att du också
+                            värdesätter vår. 
+                        </p>
 
-            </div>
+                        <p>
+                            I händelse av att du behöver avboka din tid, vänligen meddela oss senast 24 timmar
+                            innan din planerade tid. 
+                        </p>
+                        <p>
+                            Försenad avbokning ger oss rätt att debitera en förseningsavgift på 60 % av
+                            behandlingspriset.
+                        </p>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>No show</button>
-                <div class="dropdown-menu">
-                    Observera att vår salong har en no-show-policy som innebär att eventuella uteblivna
-                    ankomster kommer att debiteras en avgift för sen avbokning
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Prispolicy</button>
-                <div class="dropdown-menu">
-                    Våra salongspriser kan ibland variera. För korrekt prissättning, begär en kostnadsfri
-                    konsultation på salongen.
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Förseningspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Om du blir försenad med din ankomst, kom ihåg att din tjänst kommer att avslutas
+                            vid den ursprungliga tidpunkten. 
+                        </p>
+                        <p>
+                            Alla sena ankomster, mer än 10 minuter, kommer att behöva ombokas
+                            och kommer att medföra en sen avbokningsavgift på 60% av behandlingens ursprungliga pris.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Betalningspolicy</button>
-                <div class="dropdown-menu">
-                    Befintliga kunder med utebliven ankomst eller avbokningshistorik kommer att
-                    behöva betala i förskott för alla bokningar.<br />
-                    Betalning för alla tjänster kan göras med kontanter, Apple Pay, Google Pay, kortbetalning med chip eller
-                    kontaktlös betalning eller med giltiga presentkort.
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Presentkort</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Presentkort som köpts från vårt företag kan användas som betalmetod för både tjänster
+                            och produkter inom 9 månader från köp-datum. 
+                        </p>
+                        <p>
+                            Ett föråldrat presentkort räknas som ogiltigt och kan
+                            därmed inte längre användas som betalmetod.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">No show</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Observera att vår salong har en no-show-policy som innebär att eventuella uteblivna
+                            ankomster kommer att debiteras en avgift för sen avbokning
+                        </p>
 
-                <button class=" link" data-dropdown-button>Integritetspolicy</button>
-                <div class="dropdown-menu">
-                    Kundinformation i våra filer används för att förbättra din tjänst och skicka viktiga
-                    meddelanden samt marknadsföringskommunikation. Vi delar inte under några omständigheter denna
-                    information med tredje part.
+                    </div>
                 </div>
             </div>
 
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Prispolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Våra salongspriser kan ibland variera. För korrekt prissättning, begär en kostnadsfri
+                            konsultation på salongen.
+                        </p>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Återbetalningspolicy för produkter och verktyg</button>
-                <div class="dropdown-menu">
-                    Vi ger inga återbetalningar av något slag, men om
-                    en produkt är felaktig kommer vi att byta ut den mot en ny motsvarande produkt. Med felaktig produkt
-                    avses en produkt med produktionsfel eller föråldrat datum redan innan köp.
+                    </div>
                 </div>
             </div>
 
-
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Återbetalningspolicy</button>
-                <div class="dropdown-menu">
-                    Om du är missnöjd med din tjänst, arbetar vi gärna med dig för att fixa det, men
-                    på grund av tjänstens karaktär erbjuder vi inga återbetalningar.
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Betalningspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Befintliga kunder med utebliven ankomst eller avbokningshistorik kommer att
+                            behöva betala i förskott för alla bokningar.
+                        </p>
+                        <p>
+                            Betalning för alla tjänster kan göras med kontanter, Apple Pay, Google Pay, kortbetalning med chip eller
+                            kontaktlös betalning eller med giltiga presentkort.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Hälso- och säkerhetspolicy</button>
-                <div class="dropdown-menu">
-                    Säkerheten för vår personal och kunder är vår högsta prioritet. Om du
-                    lider av någon smittsam infektion rekommenderar vi att du bokar om din tid tills du mår bättre. Du kan
-                    bli ombedd att bära masker eller att omboka din tid om vi misstänker att du är sjuk. Detta kan resultera i
-                    en avgift för sen avbokning vilket motsvarar 60% utav behandlingens pris.
-
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Integritetspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Kundinformation i våra filer används för att förbättra din tjänst och skicka viktiga
+                            meddelanden samt marknadsföringskommunikation. 
+                        </p>
+                        <p>
+                            Vi delar inte under några omständigheter denna
+                            information med tredje part.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
-
-                <button class=" link" data-dropdown-button>Barnpolicy</button>
-                <div class="dropdown-menu">
-                    För att garantera komforten för alla våra kunder tillåter vi inte barn i salongen under
-                    pågående behandling. Underlåtenhet att följa denna policy kommer att resultera i att mötet måste bokas
-                    om och kan medföra en avgift för sen avbokning.
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Återbetalningspolicy för produkter och verktyg</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Vi ger inga återbetalningar av något slag, men om
+                            en produkt är felaktig kommer vi att byta ut den mot en ny motsvarande produkt. 
+                        </p>
+                        <p>
+                            Med felaktig produkt
+                            avses en produkt med produktionsfel eller föråldrat datum redan innan köp.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Återbetalningspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Om du är missnöjd med din tjänst, arbetar vi gärna med dig för att fixa det, men
+                            på grund av tjänstens karaktär erbjuder vi inga återbetalningar.
+                        </p>
 
-                <button class=" link" data-dropdown-button>Husdjurspolicy</button>
-                <div class="dropdown-menu">
-                    För att garantera komforten för alla våra kunder tillåter vi inte husdjur i salongen.
-                    Underlåtenhet att följa denna policy kommer att resultera i att mötet behöver bokas om och kan
-                    medföra en avgift för sen avbokning.
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown-new" data-dropdown>
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Hälso- och säkerhetspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Säkerheten för vår personal och kunder är vår högsta prioritet. 
+                        </p>
+                        <p>
+                            Om du
+                            lider av någon smittsam infektion rekommenderar vi att du bokar om din tid tills du mår bättre.
+                        </p>
+                        <p>
+                            Du kan
+                            bli ombedd att bära masker eller att omboka din tid om vi misstänker att du är sjuk. Detta kan resultera i
+                            en avgift för sen avbokning vilket motsvarar 60% utav behandlingens pris.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <button class=" link" data-dropdown-button>Rätt att vägra policy</button>
-                <div class="dropdown-menu">
-                    Vår verksamhet har rätt att vägra service till alla som är påverkade av alkohol
-                    eller droger, beter sig olämpligt mot vår personal eller kan utgöra ett hot mot vår verksamhet.
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Barnpolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            För att garantera komforten för alla våra kunder tillåter vi inte barn i salongen under
+                            pågående behandling. 
+                        </p>
+                        <p>
+                            Underlåtenhet att följa denna policy kommer att resultera i att mötet måste bokas
+                            om och kan medföra en avgift för sen avbokning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Husdjurspolicy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            För att garantera komforten för alla våra kunder tillåter vi inte husdjur i salongen.
+                            
+                        </p>
+                        <p>
+                            Underlåtenhet att följa denna policy kommer att resultera i att mötet behöver bokas om och kan
+                            medföra en avgift för sen avbokning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Rätt att vägra policy</span>
+                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <p>
+                            Vår verksamhet har rätt att vägra service till alla som är påverkade av alkohol
+                            eller droger, beter sig olämpligt mot vår personal eller kan utgöra ett hot mot vår verksamhet.
+                        </p>
+
+                    </div>
                 </div>
             </div>
 
         </div>
+
+
 
     </div>
 
@@ -238,5 +362,8 @@
             <p><a href="https://www.instagram.com/_mivibeauty_/"><img src="../../images/instagram-logo.svg" class="icon" style="margin-right:10px;" /></a><a href="https://www.facebook.com/people/MiVi-Beauty/61554567400659/"><img src="../../images/facebook-logo.svg" class="icon" style="margin-left:10px;" /></a></p>
         </div>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
