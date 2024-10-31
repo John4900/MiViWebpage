@@ -430,23 +430,28 @@ tr td {
 
 
 
-.dropdown-new{
-    position:relative;
-}
-
-.link{
-    background: none;
-    border: none;
-    text-decoration: none;
-    color: #777;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
+.dropdown-new {
+    position: relative;
+    text-align: left;
+    padding-left: 1%;
     
 }
 
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    font-size: 200%;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: -10px;
+    width: 100%
+}
+
 .dropdown-new.active > .link, .link:hover{
-    color:black;
+    color:#F5E0FD;
 }
 
 .dropdown-menu {
@@ -456,13 +461,22 @@ tr td {
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     pointer-events: none;
-    padding-bottom: 30px;
+    color: white;
+    background: black;
+    width: 100%;
+    font-size: 100%;
+    text-align: left;
+    position: center;
+    word-spacing: 3px;
+    font-family: Arial;
+    margin-left: 1.5%;
 }
 
 .dropdown-new.active > .link + .dropdown-menu{
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+    z-index: 1;
 }
 
 .footer {
