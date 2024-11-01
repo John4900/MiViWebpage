@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tjänster och priser - MiVi Beauty</title>
     <link rel=" stylesheet" href="../../style.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
-    </script>
-    <script src="../../navbar.js" defer></script>
-
-    <script type="text/javascript">
-        function showHideRow(row) {
-            $('#' + row).toggle();
-        }
-    </script>
-
+    <script src="../../js/navbar.js" defer></script>
+    <script src="../../js/price.js" defer></script>
 </head>
 <body>
     <div class="altbanner">
@@ -33,28 +22,22 @@
                 <li><a href="https://gift-cards.phorest.com/salons/mivibeauty"><img src="../../images/giftcard.svg" style="width:50px;height:50px;margin:-10px;"></a></li>
                 <li><a href="http://phore.st/8g8iS"><img src="../../images/shopping_icon.svg" class="icon"></a></li>
             </ul>
-
             <div class="dropdown">
                 <button class="dropbtn">
                     <img src="../../images/language-icon.svg" style="width: 30px; height: 30px; " />
-
                 </button>
                 <div class="dropdown-content">
                     <a href="#"><img src="../../images/sv-flag.svg" class="icon" /></a>
                     <a href="../fi/prices_fi.html"><img src="../../images/fi-flag.svg" class="icon" /></a>
                     <a href="../eng/prices_eng.html"><img src="../../images/uk-flag.svg" class="icon" /></a>
-
                 </div>
             </div>
-
         </div>
-
         <div class="SmallNavbar">
             <img src="../../images/MiViBeauty_logo_transp_white.png" style="width:50%; margin-right:30%;" />
             <div class="dropdown">
                 <button class="dropbtn">
                     <img src="../../images/menu-icon.svg" class="icon" />
-
                 </button>
                 <div class="dropdown-content">
                     <a href="../../index.html">Hem</a>
@@ -69,580 +52,781 @@
             <div class="dropdown">
                 <button class="dropbtn">
                     <img src="../../images/language-icon.svg" style="width: 30px; height: 30px; " />
-
                 </button>
                 <div class="dropdown-content">
                     <a href="#"><img src="../../images/sv-flag.svg" class="icon" /></a>
                     <a href="../fi/prices_fi.html"><img src="../../images/fi-flag.svg" class="icon" /></a>
                     <a href="../eng/prices_eng.html"><img src="../../images/uk-flag.svg" class="icon" /></a>
-
                 </div>
             </div>
-
         </div>
-
         <div class="info">
             <h1>Våra tjänster</h1>
             <h2>Fransar och bryn</h2>
             <div class="container">
-
                 <img src="../../images/eye.jpg" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row1');" class="cont">Formning av bryn <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon> </td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Formning av bryn</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Formning av bryn med hjälp av vax och pincett.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>Från 14 €</td>
                     </tr>
-                    <tr id="hidden_row1" class="hidden_row">
-                        <td colspan="4">
-                            Formning av bryn med hjälp av vax och pincett.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row2');" class="cont">Färgning och formning av bryn</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Färgning & formning av bryn</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Permanent färgning av ögonbryn samt formning. </p>
+                                        <p>Formning görs med vax och pincett, färgen håller ca. 4-6v.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>23 €</td>
                     </tr>
-                    <tr id="hidden_row2" class="hidden_row">
-                        <td colspan="4">
-                            Permanent färgning av ögonbryn samt formning. Formning görs med vax och pincett, färgen håller ca. 4-6v.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row3');" class="cont">Färgning av fransar</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Färgning av fransar</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Permanent färgning av fransar.</p>
+                                        <p>Håller ca 4-6 v.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>23 €</td>
                     </tr>
-                    <tr id="hidden_row3" class="hidden_row">
-                        <td colspan="4">
-                            Permanent färgning av fransar. Håller ca. 4-6v.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row4');" class="cont">Färgning av fransar och bryn</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Färgning av fransar & bryn</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Permanent färgning av fransar och bryn samt formning av bryn.</p>
+                                        <p>Formning görs med vax och pincett, färgen håller ca 4-6 v.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>35 €</td>
                     </tr>
-                    <tr id="hidden_row4" class="hidden_row">
-                        <td colspan="4">
-                            Permanent färgning av fransar och bryn samt formning av bryn. Formning görs med vax och pincett, färgen håller ca. 4-6v.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row5');" class="cont">Lash lift</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Lash lift</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Permanent böjning av egna fransar. Färgning av fransar ingår. </p>
+                                        <p>Håller ca 6-8 v.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>70 €</td>
                     </tr>
-                    <tr id="hidden_row5" class="hidden_row">
-                        <td colspan="4">
-                            Permanent böjning av egna fransar. Färgning av fransar ingår. Håller ca 6-8v.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row6');" class="cont">Lash lift + brynfärg</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Lash lift + brynfärg</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Permanent böjning av egna fransar. Färgning av fransar och bryn ingår. </p>
+                                        <p>Håller ca 6-8 v.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>85 €</td>
                     </tr>
-                    <tr id="hidden_row6" class="hidden_row">
-                        <td colspan="4">
-                            Permanent böjning av egna fransar. Färgning av fransar och bryn ingår. Håller ca 6-8v.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
             <h2>Ansiktsbehandlingar</h2>
             <div class="container">
-
                 <img src="../../images/massage.jpg" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row7');" class="cont">Express</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Express</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, peeling, mask och slutkräm.</p>
+                                        <p>Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>40 €</td>
                     </tr>
-                    <tr id="hidden_row7" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, peeling, mask och slutkräm. <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row8');" class="cont">Timmen</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Timmen</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, peeling, kompresser, lätt mekanisk rengöring, bryn plock, ansiktsmassage, ansiktsmask samt kräm.</p>
+                                        <p>Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>70 €</td>
                     </tr>
-                    <tr id="hidden_row8" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, peeling, kompresser, lätt mekanisk rengöring, bryn plock, ansiktsmassage, ansiktsmask samt kräm. <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row9');" class="cont">Djuprengöring</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Djuprengöring</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, peeling, kompresser, grundlig djuprengöring, brynplock, ansiktsmask samt kräm. </p>
+                                        <p>Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>68 €</td>
                     </tr>
-                    <tr id="hidden_row9" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, peeling, kompresser, grundlig djuprengöring, brynplock, ansiktsmask samt kräm. <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row10');" class="cont">Klassiska</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Klassiska</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, peeling, kompresser, lätt mekanisk rengöring, brynplock.</p>
+                                        <p>Massage (ansikte, decolletage, axlar, nacke), mask, ampull och slutkräm.</p>
+                                        <p>Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>83 €</td>
                     </tr>
-                    <tr id="hidden_row10" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, peeling, kompresser, lätt mekanisk rengöring, brynplock, massage (ansikte, decolletage, axlar, nacke), mask, ampull och slutkräm.
-                            <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row11');" class="cont">LYX</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">LYX</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, peeling, kompresser. </p>
+                                        <p>Lång massage (ansikte, decolletage, axlar, nacke). </p>
+                                        <p>Special mask, 2x ampuller, slutkräm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>97 €</td>
                     </tr>
-                    <tr id="hidden_row11" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, peeling, kompresser, lång massage (ansikte, decolletage, axlar, nacke), special mask, 2x ampuller, slutkräm.
-                            <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row12');" class="cont">Ansiktsmassage</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Ansiktsmassage</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring samt avslappnande ansikts-och decolletagemassage.</p>
+                                        <p>Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>37 €</td>
                     </tr>
-                    <tr id="hidden_row12" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring samt avslappnande ansikts-och decolletagemassage. <br />Alla ansiktsbehandlingar anpassas enligt kundens hudtyp och behov.
-                        </td>
-                    </tr>
-
                 </table>
-
-
-
             </div>
-
             <h2>Massage</h2>
             <div class="container">
-
                 <img src="../../images/massage_2.png" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row13');" class="cont">Aromaterapi 30min</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Aromaterapi 30min</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Denna korta 30min version är avsedd för rygg, nacke och axlar.</p>
+                                        <p>Aromamassage är en mild, lindrande och avslappnande oljemassage för hela kroppen.</p>
+                                        <p>Till behandlingen väljs en passande eterisk olja som stöder de problem eller önskemål kunden har.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>40 €</td>
                     </tr>
-                    <tr id="hidden_row13" class="hidden_row">
-                        <td colspan="4">
-                            Denna korta 30min version är avsedd för rygg, nacke och axlar. <br />Aromamassage är en mild, lindrande och avslappnande oljemassage för hela kroppen.
-                            <br />Till behandlingen väljs en passande eterisk olja som stöder de problem eller önskemål kunden har.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row14');" class="cont">Aromaterapi 60min</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Aromaterapi 60min</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>En kortare version där du som kund kan välja mellan fyra alternativ:</p>
+                                        <p>1. Överkropp <i>(rygg, nacke, hårbotten, armar)</i></p>
+                                        <p>2. Underkropp <i>(fram och baksida ben samt fötter)</i></p>
+                                        <p>3. Baksida <i>(baksida ben, fötter, rygg)</i></p>
+                                        <p>4. Framsida <i>(framsida ben, armar, nacke och hårbotten)</i></p>
+                                        <p>Till massagen väljs även passande eterisk olja som stöder de problem eller önskemål kunden har.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>65 €</td>
                     </tr>
-                    <tr id="hidden_row14" class="hidden_row">
-                        <td colspan="4">
-                            En kortare version där du som kund kan välja mellan fyra alternativ:
-                            <br />1. Överkropp (rygg, nacke, hårbotten, armar) <br />2. Underkropp (fram och baksida ben samt fötter)
-                            <br />3. Baksida (Baksida ben, fötter, rygg) <br /> 4. Framsida (Framsida ben, armar, nacke och hårbotten).
-                            <br />Till massagen väljs även passande eterisk olja som stöder de problem eller önskemål kunden har.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row15');" class="cont">Aromaterapi 90min</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Aromaterapi 90min</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Lättare avslappnande olje massage där du som kund är med och påverkar vilken eterisk olja som passar dina behov bäst.</p>
+                                        <p>Denna 90min behandling ger oss tiden att massera hela kroppen. </p>
+                                        <p>Vi masserar benen, fötterna, ryggen, armar, händer, nacke och hårbotten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>75 €</td>
                     </tr>
-                    <tr id="hidden_row15" class="hidden_row">
-                        <td colspan="4">
-                            Lättare avslappnande olje massage där du som kund är med och påverkar vilken eterisk olja som passar dina behov bäst.
-                            <br />Denna 90min behandling ger oss tiden att massera hela kroppen. <br />Vi masserar benen, fötterna, ryggen, armar, händer, nacke och hårbotten.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row16');" class="cont">Aromaterapi 120min</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Aromaterapi 120min</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Lättare avslappnande olje massage där du som kund är med och påverkar vilken eterisk olja som passar dina behov bäst.</p>
+                                        <p>Denna 2h behandling ger oss tiden att massera hela kroppen ordentligt vilket ger den ultimata avkopplingen.</p>
+                                        <p>Vi masserar benen, fötterna, ryggen, armar, händer, nacke och hårbotten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>95 €</td>
                     </tr>
-                    <tr id="hidden_row16" class="hidden_row">
-                        <td colspan="4">
-                            Lättare avslappnande olje massage där du som kund är med och påverkar vilken eterisk olja som passar dina behov bäst.
-                            <br />Denna 2h behandling ger oss tiden att massera hela kroppen ordentligt vilket ger den ultimata avkopplingen.
-                            <br />Vi masserar benen, fötterna, ryggen, armar, händer, nacke och hårbotten.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row17');" class="cont">Indisk hårbottenmassage</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Indisk hårbottenmassage</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Behandlingen fokuserar på avslappning samt stöder hårets välmående.</p>
+                                        <p>Vid regelbunden behandling kan man även stödja hårets hälsa i form av starkare och friskare hår.</p>
+                                        <p>Behandlingen görs sittande med kläderna på och massagen utförs med hjälp av tryck och strykningar.</p>
+                                        <p>Området som behandlas är övre ryggen, nacken, axlarna, ansiktet och hårbotten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>50 €</td>
                     </tr>
-                    <tr id="hidden_row17" class="hidden_row">
-                        <td colspan="4">
-                            Behandlingen fokuserar på avslappning samt stöder hårets välmående.
-                            <br />Vid regelbunden behandling kan man även stödja hårets hälsa i form av starkare och friskare hår.
-                            <br />Behandlingen görs sittande med kläderna på och massagen utförs med hjälp av tryck och strykningar.
-                            <br />Området som behandlas är övre ryggen, nacken, axlarna, ansiktet och hårbotten.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
-
             <h2>Fötter</h2>
             <div class="container">
-
                 <img src="../../images/fotvard.png" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row18');" class="cont">Fotvård <small><i>(EJ lack eller massage)</i></small></td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotvård <br /> <a style="font-size: 50%; font-style:italic; margin-left: 10px; margin-bottom:-10px;">(EJ lack eller massage)</a></span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Peeling, mask, skötsel av förhårdnader och problemområden. </p>
+                                        <p>Klippning och formning av naglar, ansning av nagelband samt slutkräm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>65 €</td>
                     </tr>
-                    <tr id="hidden_row18" class="hidden_row">
-                        <td colspan="4">
-                            Peeling, mask, skötsel av förhårdnader och problemområden, klippning och formning av naglar, ansning av nagelband samt slutkräm.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row19');" class="cont">Fotvård <small><i>(inkl. massage)</i></small></td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotvård <br /> <a style="font-size: 50%; font-style:italic; margin-left: 10px; margin-bottom:-10px;">(inkl. massage)</a></span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Peeling, mask, skötsel av förhårdnader och problemområden. </p>
+                                        <p>Klippning och formning av naglar, ansning av nagelband, massage samt slutkräm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>72 €</td>
                     </tr>
-                    <tr id="hidden_row19" class="hidden_row">
-                        <td colspan="4">
-                            Peeling, mask, skötsel av förhårdnader och problemområden, klippning och formning av naglar, ansning av nagelband, massage samt slutkräm.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row20');" class="cont">Fotvård <small><i>(inkl. lack & massage)</i></small></td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotvård <br /> <a style="font-size: 50%; font-style:italic; margin-left: 10px; margin-bottom:-10px;">(inkl. lack & massage)</a></span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Peeling, mask, skötsel av förhårdnader och problemområden.</p>
+                                        <p>Klippning och formning av naglar, ansning av nagelband, lackning i valfri färg.</p>
+                                        <p>Hårbottenmassage medan lacket torkar samt fotmassage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>77 €</td>
                     </tr>
-                    <tr id="hidden_row20" class="hidden_row">
-                        <td colspan="4">
-                            Peeling, mask, skötsel av förhårdnader och problemområden, klippning och formning av naglar, ansning av nagelband, lackning i valfri färg, hårbottenmassage medan lacket torkar samt fotmassage.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row21');" class="cont">Skötsel av naglarna</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Skötsel av naglarna</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Klippning, filning och/eller uttunning av naglar. Max 30min.</p>
+                                        <p>Notera att priset kan variera enligt kundens behov och önskemål. Från 20€.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>Från 20 €</td>
                     </tr>
-                    <tr id="hidden_row21" class="hidden_row">
-                        <td colspan="4">
-                            Klippning, filning och/eller uttunning av naglar. Max 30min.
-                            <br />Notera att priset kan variera enligt kundens behov och önskemål. Från 20€.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row22');" class="cont">Fotmassage</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotmassage</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Vill du njuta av en lång och avslappnande fotmassage? Då är detta behandlingen för dig!</p>
+                                        <p>I behandlingen ingår desinficering av fötterna samt avslappnande fotmassage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>35 €</td>
                     </tr>
-                    <tr id="hidden_row22" class="hidden_row">
-                        <td colspan="4">
-                            Vill du njuta av en lång och avslappnande fotmassage? Då är detta behandlingen för dig!
-                            <br />I behandlingen ingår desinficering av fötterna samt avslappnande fotmassage.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
-
             <h2>Händer</h2>
             <div class="container">
-
                 <img src="../../images/manikyr.png" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row23');" class="cont">Manikyr <small><i>(inkl. lackning)</i></small></td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Manikyr <br /> <a style="font-size: 50%; font-style:italic; margin-left: 10px; margin-bottom:-10px;">(inkl. lackning)</a></span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Filning och formning av naglar, ansning av nagelbanden. </p>
+                                        <p>Handmassage, lackning med valfri färg samt handkräm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>47 €</td>
                     </tr>
-                    <tr id="hidden_row23" class="hidden_row">
-                        <td colspan="4">
-                            Filning och formning av naglar, ansning av nagelbanden, handmassage, lackning med valfri färg samt handkräm.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row24');" class="cont">Snabbmanikyr</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Snabbmanikyr</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Fil och formning av naglar, ansning av nagelband, lack och kräm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>30 €</td>
                     </tr>
-                    <tr id="hidden_row24" class="hidden_row">
-                        <td colspan="4">
-                            Fil och formning av naglar, ansning av nagelband, lack och kräm.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row25');" class="cont">Spa manikyr</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Spa manikyr</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Peeling, filning och formning av naglar, ansning av nagelbanden. </p>
+                                        <p>Handmassage, handkräm, och lackning med valfri färg.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>58 €</td>
                     </tr>
-                    <tr id="hidden_row25" class="hidden_row">
-                        <td colspan="4">
-                            Peeling, filning och formning av naglar, ansning av nagelbanden, handmassage, handkräm, och lackning med valfri färg.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row26');" class="cont">Klipp & fil</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Klipp & fil</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Som namnet säger ingår klippning och filning av naglarna.</p>
+                                        <p>Priset kan variera efter kundens önskemål.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>17 €</td>
                     </tr>
-                    <tr id="hidden_row26" class="hidden_row">
-                        <td colspan="4">
-                            Som namnet säger ingår klippning och filning av naglarna. Priset kan variera efter kundens önskemål.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
-
             <h2>Hårborttagning</h2>
             <div class="container">
-
                 <img src="../../images/behandling.jpg" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row27');" class="cont">Hårborttagning överläpp</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning överläpp</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av överläpp med hjälp av vax och pincett.</p>
+                                        <p>Observera att priset kan variera efter kundens önskemål.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>15 €</td>
                     </tr>
-                    <tr id="hidden_row27" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av överläpp med hjälp av vax och pincett.
-                            <br />Observera att priset kan variera efter kundens önskemål.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row28');" class="cont">Hårborttagning haka</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning haka</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av haka med hjälp av vax och pincett.</p>
+                                        <p>Observera att priset kan variera efter kundens önskemål.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>15 €</td>
                     </tr>
-                    <tr id="hidden_row28" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av haka med hjälp av vax och pincett.
-                            <br />Observera att priset kan variera efter kundens önskemål.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row29');" class="cont">Hårborttagning av överläpp & haka</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning av överläpp & haka</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av överläpp & haka med hjälp av vax och pincett.</p>
+                                        <p>Observera att priset kan variera efter kundens önskemål.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>25 €</td>
                     </tr>
-                    <tr id="hidden_row29" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av överläpp & haka med hjälp av vax och pincett.
-                            <br />Observera att priset kan variera efter kundens önskemål.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row30');" class="cont">Hårborttagning armhålor</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning armhålor</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av armhåla med hjälp av vax och pincett.</p>
+                                        <p>Observera att priset kan variera efter kundens önskemål.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>25 €</td>
                     </tr>
-                    <tr id="hidden_row30" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av armhåla med hjälp av vax och pincett.
-                            <br />Observera att priset kan variera efter kundens önskemål.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row31');" class="cont">Hårborttagning vader</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning vader</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av vader inklusive knä.</p>
+                                        <p>Hårborttagningen sker med socker som är en skonsam och effektiv metod och passar alla hudtyper.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>40 €</td>
                     </tr>
-                    <tr id="hidden_row31" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av vader inklusive knä. Hårborttagningen sker med socker som är en skonsam och effektiv metod och passar alla hudtyper.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row32');" class="cont">Hårborttagning av hela benen </td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning av hela benen</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning med hjälp av socker för hela benen. </p>
+                                        <p>Socker är en skonsam och effektiv metod som passar alla hudtyper.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>60 €</td>
                     </tr>
-                    <tr id="hidden_row32" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning med hjälp av socker för hela ben. Socker är en skonsam och effektiv metod som passar alla hudtyper.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row33');" class="cont">Hårborttagning bikinilinje</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Hårborttagning bikinilinje</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Hårborttagning av bikinilinjen med hjälp av socker eller vax.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>25 €</td>
                     </tr>
-                    <tr id="hidden_row33" class="hidden_row">
-                        <td colspan="4">
-                            Hårborttagning av bikinilinjen med hjälp av socker eller vax.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
             <h2>Juniorer</h2>
             <div class="container">
-
                 <img src="../../images/happy.jpg" class="treat-pic">
-
-
-
                 <table align="left" cellpadding="10">
                     <tr>
                         <th>Behandling</th>
                         <th>Pris</th>
                     </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row34');" class="cont">Junior fötter</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Junior fötter</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Fotbad, nagelklippning, lackning och massage.</p>
+                                        <p>Övre åldersgräns 14 år.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>30 €</td>
                     </tr>
-                    <tr id="hidden_row34" class="hidden_row">
-                        <td colspan="4">
-                            Fotbad, nagelklippning, lackning och massage. Övre åldersgräns 14år.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row35');" class="cont">Junior händer</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Junior händer</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Filning av naglar, lackning och massage.</p>
+                                        <p>Övre åldersgräns 14 år</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>25 €</td>
                     </tr>
-                    <tr id="hidden_row35" class="hidden_row">
-                        <td colspan="4">
-                            Filning av naglar, lackning och massage. Övre åldersgräns 14år.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row36');" class="cont">Junior ansikte</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Junior ansikte</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Rengöring, massage och mask.</p>
+                                        <p>Övre åldersgräns 14 år</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>35 €</td>
                     </tr>
-                    <tr id="hidden_row36" class="hidden_row">
-                        <td colspan="4">
-                            Rengöring, massage och mask. Övre åldersgräns 14år.
-                        </td>
-                    </tr>
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row37');" class="cont">Junior paket</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Junior paket</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Junior- fötter, händer och ansikte. </p>
+                                        <p>Övre åldersgräns 14 år.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>80 €</td>
                     </tr>
-                    <tr id="hidden_row37" class="hidden_row">
-                        <td colspan="4">
-                            Junior- fötter, händer och ansikte. Övre åldersgräns 14år.
-                        </td>
-                    </tr>
-
                 </table>
-
             </div>
-
             <h2>Hembesök</h2>
             <div class="container">
                 <img src="../../images/pedikyr.png" class="treat-pic" />
-
                 <table align="left" cellpadding="10">
-
                     <tr>
-                        <td onclick="showHideRow('hidden_row38');" class="cont">Fotvård hembesök kort</td>
+                        <th>Behandling</th>
+                        <th>Pris</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotvård hembesök kort</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Fotbad, skötsel av förhårdnader, naglar och nagelband, kort massage om tid finns, slutkräm.</p>
+                                        <p>Denna bokning gäller hembesök vars körtid (ena vägen) är KORTARE än 10min. Pris från 65€.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>Från 65 €</td>
                     </tr>
-                    <tr id="hidden_row38" class="hidden_row">
-                        <td colspan="4">
-                            Fotbad, skötsel av förhårdnader, naglar och nagelband, kort massage om tid finns, slutkräm.
-                            <br />Denna bokning gäller hembesök vars körtid (ena vägen) är KORTARE än 10min. Pris från 65€.
-                        </td>
-                    </tr>
                     <tr>
-                        <td onclick="showHideRow('hidden_row39');" class="cont">Fotvård hembesök lång</td>
+                        <td>
+                            <div class="expand-price">
+                                <div class="expand-price__title-bar">
+                                    <span class="expand-price__title-bar">Fotvård hembesök lång</span>
+                                    <ion-icon name="chevron-back-outline" class="expandable__icon"></ion-icon>
+                                </div>
+                                <div class="expandable__content-wrapper">
+                                    <div class="expand-price__content">
+                                        <p>Fotbad, skötsel av förhårdnader, naglar och nagelband, kort massage om tid finns, slutkräm.</p>
+                                        <p>Denna bokning gäller hembesök vars körtid (ena vägen) är LÄNGRE än 10min. Pris från 85€.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>Från 85 €</td>
                     </tr>
-                    <tr id="hidden_row39" class="hidden_row">
-                        <td colspan="4">
-                            Fotbad, skötsel av förhårdnader, naglar och nagelband, kort massage om tid finns, slutkräm.
-                            <br />Denna bokning gäller hembesök vars körtid (ena vägen) är LÄNGRE än 10min. Pris från 85€.
-                        </td>
-                    </tr>
-
                 </table>
             </div>
-
-
         </div>
     </div>
-
     <footer>
         <div class="footer">
             <h1>Kontaktuppgifter</h1>
-            <p>
-                Kyrkoesplanaden 13, Pargas, 21600, Finland
-            </p>
+            <p>Kyrkoesplanaden 13, Pargas, 21600, Finland</p>
             <p><a href="tel:0449778642"><img src="../../images/phone_icon.svg" style="width:30px; height:30px; margin-right:5px; margin-bottom:-6px;" />044 9778642</a></p>
             <p><a href="mailto:info@mivibeauty.fi"><img src="../../images/mail_icon.svg" style="width:30px; height:30px; margin-right:5px; margin-bottom:-6px;" />info@mivibeauty.fi</a></p>
-            <p><a href="https://www.instagram.com/_mivibeauty_/"><img src="../../images/instagram-logo.svg" class="icon" style="margin-right:10px;" /></a><a href="https://www.facebook.com/people/MiVi-Beauty/61554567400659/"><img src="../../images/facebook-logo.svg" class="icon" style="margin-left:10px;" /></a></p>
+            <p><a href="https://www.instagram.com/_mivibeauty_/"><img src="../../images/instagram-logo.svg" class="icon" style="margin-right:10px;" /></a>
+            <a href="https://www.facebook.com/people/MiVi-Beauty/61554567400659/"><img src="../../images/facebook-logo.svg" class="icon" style="margin-left:10px;" /></a></p>
         </div>
     </footer>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>

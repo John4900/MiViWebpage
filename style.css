@@ -1,7 +1,7 @@
 ﻿* {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .banner{
     width: 100%;
@@ -10,7 +10,6 @@
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/Possible_background.jpeg);
     background-size: cover;
     background-position: center;
-    
 }
 
 .altbanner {
@@ -104,7 +103,7 @@
         text-align: left;
         position: center;
         word-spacing: 3px;
-        font-family: Arial;
+        font-family: inherit;
         color: white;
         width: 90%;
     }
@@ -165,13 +164,11 @@
         
     }
 
-    
-    
     th {
         font-size: 150%;
         text-decoration: underline;
         text-align: start;
-        height: 100px;
+        height: 90px;
     }
 
     tr {
@@ -179,7 +176,6 @@
         margin-right: 10px;
         line-height: 50px;
         margin-bottom: 0;
-        
     }
 
     .info h1 {
@@ -201,7 +197,7 @@
         text-align: left;
         position: center;
         word-spacing: 3px;
-        font-family: Arial;
+        font-family: inherit;
         color: white;
     }    
 }
@@ -228,7 +224,6 @@
         
     }
 
-    
     .SmallNavbar a:hover, .dropdown:hover .dropbtn {
         background-color: #F5E0FD;
     }
@@ -251,8 +246,6 @@
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
     pointer-events: none;
 }
-
-
 
     /* Links inside the dropdown */
     .dropdown-content a {
@@ -282,8 +275,6 @@
     pointer-events: auto;
     z-index: 1;
 }
-/* Show the dropdown menu on hover */
-
 
 .logo {
     width: 25%;
@@ -320,7 +311,6 @@
 }
 .LargeNavbar ul li:hover::after {
         width: 100%;
-
  }
 
 .content h1{
@@ -409,42 +399,16 @@ button:hover{
 }
 
 
-
 table {
-    width: 200%;
-    line-height: 140%;
+    width: 100%;
+    line-height: 110%;
     text-align: start;
-    
-
+    border-inline: none;
+    border: 2px solid;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+    padding-inline-start: 5px;
 }
-tr td {
-    border-bottom: solid;
-    border-color: #B8A9CF;
-    
-}
-
-.cont:hover{
-    background: linear-gradient(to bottom right, #B8A9CF,#F5E0FD);
-    cursor: pointer;
-}
-
-
-
-.hidden_row {
-    display: none;
-}
-    .hidden_row td {
-        background: linear-gradient(to bottom right, #B8A9CF,#F5E0FD);
-        color: black;
-        font-family: italic;
-        border-radius: 7px;
-        border: none;
-        text-align: center;
-        
-    }
-
-
-
 
 .contact_container{
     width: 100%;
@@ -474,6 +438,7 @@ tr td {
 
 .expandable__title-bar{
     
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -524,15 +489,63 @@ tr td {
     transition: grid-template-rows 0.3s ease-out;
 }
 
-
-
-.footer {
-    background: linear-gradient(180deg, #B8A9CF,#F5E0FD);
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    
+tr td{
+    width: 20px;
 }
+
+.expand-price {
+    max-width: 95%;
+    margin: 0;
+    font-size: 50%;
+    font-family: inherit;
+    border-bottom: 2px solid;
+    
+    border-radius: 6px;
+}
+
+.expand-price--open .expandable__content-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.expand-price--open .expandable__icon {
+    transform: rotate(-90deg);
+}
+
+.expand-price__title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    user-select: none;
+    color: #B8A9CF;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    background-color: none;
+    font-size: 150%;
+}
+
+.expand-price__content {
+    line-height: 1.4;
+    font-size: 0.85em;
+    border-top: 3px solid;
+    overflow: hidden;
+}
+
+    .expand-price__content p {
+        text-align: center;
+        width: auto;
+        font-family: inherit;
+        color: white;
+        padding: 5px;
+        font-size: 160%;
+    }
+
+    .footer {
+        background: linear-gradient(180deg, #B8A9CF,#F5E0FD);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
     .footer h1 {
         font-size: 40px;
         margin-top: 20px;
