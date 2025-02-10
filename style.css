@@ -29,7 +29,7 @@
         top: 0;
         left: 0;
         background-color: white;
-        background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(images/backgrounds/prices_background.jpg)  no-repeat center center;
+        background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(images/backgrounds/prices_background-min.jpg)  no-repeat center center;
         background-size: cover;
         will-change: transform;
         z-index: -1;
