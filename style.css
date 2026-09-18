@@ -10,13 +10,12 @@ body {
     margin: 0;
 }
 .banner{
-    width: 100%;
-    min-height: 100vh;
+    width: 99vw;
+    min-height: 90vh;
     height: auto;
     overflow: hidden;
     position: relative;
     padding-bottom: 10px;
-    
 
     &::before {
         content: ' ';
@@ -103,6 +102,8 @@ body {
 	.content h1{
     font-size: 200%;
     margin-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 	}
 
     .portrait {
@@ -242,10 +243,11 @@ body {
 
     .content {
         width: 100%;
-        position: absolute;
+        height: auto;
+        position: relative;
         top: 40%;
-        transform: translateY(10%);
-        
+        margin-top: -2rem;
+        margin-bottom: 1rem;
         text-align: center;
         color: #B8A9CF;
     }
@@ -443,6 +445,21 @@ body {
     width: 50px;
     height: 60px;
     margin: -10px;
+}
+
+.badge-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-content: space-evenly;
+    padding-top: 2rem;
+}
+.badge {
+    width: 10rem;
+    height: 10rem;
+
 }
 
 .LargeNavbar ul {
